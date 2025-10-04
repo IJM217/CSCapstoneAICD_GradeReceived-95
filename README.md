@@ -1,3 +1,25 @@
+# Scout AI - AI Content Detection System
+
+Scout AI is a full-stack web application that detects AI-generated content in text and images. The system uses machine learning models to analyze submitted content and provide confidence scores for AI detection.
+
+## Features
+
+- **Text Analysis**: Detect AI-generated text using HuggingFace transformer models
+- **Image Analysis**: Analyze images for AI generation using specialized image classification models
+- **File Upload Support**: Process PDF, DOCX, and TXT files
+- **Code Detection**: Specialized analysis mode for code content
+- **Export Results**: Download analysis results as JSON files
+- **Responsive UI**: Clean, modern interface that works on all devices
+
+## Requirements
+
+- **Python 3.10+** (for backend)
+- **Node.js 18+** (for frontend)
+- **NVIDIA GPU with CUDA** (recommended for better performance)
+- **4GB+ VRAM** (for model loading)
+- **8GB+ RAM** (for model loading)
+- **HuggingFace**: Account needed, HuggingFace-cli login to terminal & an API key set to read 
+
 ## Getting Started
 
 Disclaimer: For better and more consistent performance, an NVIDIA GPU is recommended while also installing latest Cuda Toolkit.
