@@ -6,35 +6,50 @@ This will take some time to get started at first.
 
 ## Run the development server:
 
-```
+
 powershell 1 (Backend)
 
 1.
+```
 cd .\py-backend\
+```
 
 2.
+```
 py -m venv .venv
+```
 
 3.
+```
 .\.venv\Scripts\activate
+```
 
 4.
+```
 pip install -r requirements.txt
+```
 
 4.1(Only if host device has Cuda Toolkit installed & has eligible NVIDIA GPU; If not then skip this)
+```
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+```
 
 5.
+```
 .\run.bat
 ```
 
 ## Run the Frontend server:
 
-```
+
 powershell 2 (Frontend)
-
+1.
+```
 npm install
+```
 
+2.
+```
 npm run dev
 ```
 
@@ -173,8 +188,19 @@ plot(roc_curve, print.thres="best", print.thres.best.method="youden", col="red",
 
 # HuggingFace Resources
 
+Dataset used in R
 ```
-https://huggingface.co/desklib/ai-text-detector-v1.01
-https://huggingface.co/haywoodsloan/ai-image-detector-deploy
 https://huggingface.co/datasets/basakdemirok/AIGCodeSet
+```
+
+Citation
+```
+@inproceedings{demirok2025aigcodeset,
+  title={Aigcodeset: A new annotated dataset for ai generated code detection},
+  author={Demirok, Basak and Kutlu, Mucahid},
+  booktitle={2025 33rd Signal Processing and Communications Applications Conference (SIU)},
+  pages={1--4},
+  year={2025},
+  organization={IEEE}
+}
 ```
