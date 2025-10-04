@@ -21,12 +21,14 @@ Scout AI is a full-stack web application that detects AI-generated content in te
 - **HuggingFace**: Account needed, HuggingFace-cli login to terminal & an API key set to read 
 
 
-## Tech Stack/
+## Tech Stack
 - **Python:** Transformer, pytorch, FastAPI
+- **R:** pROC, klaR, MASS
 - **React**
 - **Javascript**
 - **CSS**
 - **HTML**
+
 
 ## Getting Started
 
