@@ -442,8 +442,7 @@ class AnalysisService:
             statistical_probability = self.run_statistical_analysis(text)
             
            
-            if(llm_probability > 0.5 and statistical_probability < 0.5):
-                print(statistical_probability)
+            if(llm_probability >= 0.6 and statistical_probability < 0.5):
                 statistical_probability = 1 - statistical_probability
             
             # Combine with 60/40 weighting
