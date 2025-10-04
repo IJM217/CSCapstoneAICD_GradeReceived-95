@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+  /* AoT Scouts Color Palette - Wings of Freedom Theme */
+  --background: oklch(0.98 0.01 120); /* Very light sage green */
+  --foreground: oklch(0.15 0.05 120); /* Deep forest green */
+  --card: oklch(0.99 0.01 120); /* Pure white with slight green tint */
+  --card-foreground: oklch(0.15 0.05 120);
+  --popover: oklch(0.99 0.01 120);
+  --popover-foreground: oklch(0.15 0.05 120);
+  --primary: oklch(0.25 0.08 120); /* Deep scouts green */
+  --primary-foreground: oklch(0.98 0.01 120);
+  --secondary: oklch(0.92 0.03 120); /* Light sage */
+  --secondary-foreground: oklch(0.25 0.08 120);
+  --muted: oklch(0.92 0.03 120);
+  --muted-foreground: oklch(0.45 0.05 120);
+  --accent: oklch(0.85 0.05 45); /* Golden accent for highlights */
+  --accent-foreground: oklch(0.15 0.05 120);
+  --destructive: oklch(0.55 0.15 15); /* Deep red for warnings */
+  --border: oklch(0.85 0.03 120); /* Sage border */
+  --input: oklch(0.95 0.02 120);
+  --ring: oklch(0.25 0.08 120);
+  --chart-1: oklch(0.25 0.08 120); /* Scouts green */
+  --chart-2: oklch(0.45 0.05 120); /* Medium green */
+  --chart-3: oklch(0.65 0.04 120); /* Light green */
+  --chart-4: oklch(0.85 0.05 45); /* Gold accent */
+  --chart-5: oklch(0.55 0.15 15); /* Warning red */
+  --sidebar: oklch(0.95 0.02 120);
+  --sidebar-foreground: oklch(0.15 0.05 120);
+  --sidebar-primary: oklch(0.25 0.08 120);
+  --sidebar-primary-foreground: oklch(0.98 0.01 120);
+  --sidebar-accent: oklch(0.92 0.03 120);
+  --sidebar-accent-foreground: oklch(0.25 0.08 120);
+  --sidebar-border: oklch(0.85 0.03 120);
+  --sidebar-ring: oklch(0.25 0.08 120);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* AoT Scouts Banner Styles */
+@layer components {
+  .scout-header {
+    @apply bg-gradient-to-r from-primary to-primary/90 border-b-2 border-accent/20;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .scout-card {
+    @apply bg-card border-2 border-border/50 rounded-lg shadow-lg;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .scout-textarea {
+    @apply bg-input border-2 border-border focus:border-primary focus:ring-2 focus:ring-primary/20;
+    @apply font-mono text-sm leading-relaxed;
+  }
+  
+  .scout-highlight {
+    @apply bg-destructive/20 ring-1 ring-inset ring-destructive/30 px-0.5;
+    @apply font-medium text-foreground rounded-sm;
+  }
+  
+  .scout-wings {
+    position: relative;
+  }
+  
+  .scout-wings::before {
+    content: "⚔️";
+    position: absolute;
+    left: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+  
+  .scout-wings::after {
+    content: "⚔️";
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
+}
