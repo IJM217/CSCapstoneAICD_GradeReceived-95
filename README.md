@@ -20,6 +20,14 @@ Scout AI is a full-stack web application that detects AI-generated content in te
 - **8GB+ RAM** (for model loading)
 - **HuggingFace**: Account needed, HuggingFace-cli login to terminal & an API key set to read 
 
+
+## Tech Stack/
+- **Python:** Transformer, pytorch, FastAPI
+- **React**
+- **Javascript**
+- **CSS**
+- **HTML**
+
 ## Getting Started
 
 Disclaimer: For better and more consistent performance, an NVIDIA GPU is recommended while also installing latest Cuda Toolkit.
