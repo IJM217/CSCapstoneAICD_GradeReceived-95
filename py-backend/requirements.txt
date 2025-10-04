@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+python-docx
+transformers
+langchain
+langchain-huggingface
+torch
+cuda-python
