@@ -236,3 +236,5 @@ Citation
   organization={IEEE}
 }
 ```
+# Grade
+![alt text](https://github.com/IJM217/CSCapstoneAICD_GradeReceived-95/blob/main/Grade.png?raw=true)
